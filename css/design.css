@@ -1,0 +1,198 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  --buttom-payment: #382ae1;
+  --background-annual: #f8f9fe;
+  --change-color: #584cca;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #e0e8ff;
+}
+
+.design {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 120vh;
+}
+.design .container {
+  border-radius: 20px;
+  width: 500px;
+  background-color: white;
+  min-height: 100vh;
+}
+.container .header {
+  margin-top: 120px;
+}
+.container .header img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.container .design-body .text {
+  align-items: center;
+  text-align: center;
+}
+.container .design-body .text h2 {
+  font-weight: bold;
+  font-size: 30px;
+}
+.container .design-body .text p {
+  text-align: center;
+  align-items: center;
+  line-height: 1.8;
+  margin-left: 70px;
+  margin-right: 70px;
+  color: #868c9c;
+}
+.container .design-body .plan {
+  margin-top: 30px;
+  background-color: var(--background-annual);
+  margin-left: 30px;
+  margin-right: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+}
+.container .design-body .plan .left-side {
+  display: flex;
+  margin-top: 30px;
+}
+.container .design-body .plan .left-side img {
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.container .design-body .plan .left-side .text-side {
+  display: flex;
+  justify-content: space-between;
+  gap: 150px;
+}
+.container .design-body .plan .left-side .text-side .annual-plane {
+  font-size: 14px;
+  margin-left: 20px;
+  line-height: 0.5;
+}
+.container .design-body .plan .left-side .text-side .annual-plane h3.salary {
+  color: #868c9c;
+}
+.container .design-body .plan .left-side .text-side .change {
+  font-size: 14px;
+  text-decoration: none;
+  color: #4c6ef5;
+  text-decoration: underline;
+}
+.container .design-body .plan .left-side .text-side .change:hover {
+  color: var(--change-color);
+  text-decoration: none;
+}
+.container .design-body .buttoms {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.container .design-body .buttoms .buttom-one {
+  background: linear-gradient(135deg, #382ae1 0%, #382ae1 100%);
+  color: white;
+  border-radius: 10px;
+  height: 50px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: transform 0.2s ease;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 15px 10px rgba(115, 103, 247, 0.4);
+}
+.container .design-body .buttoms .buttom-one:hover {
+  background-color: var(--change-color);
+  transform: translateY(-2px);
+}
+.container .design-body .buttoms .buttom-two {
+  color: #666;
+  font-size: 12px;
+  background: transparent;
+  cursor: pointer;
+  padding: 16px;
+}
+@media (max-width: 480px) {
+  .design {
+    min-height: 127vh;
+  }
+  .design .container {
+    border-radius: 20px;
+    width: 350px;
+    background-color: white;
+  }
+  .container .design-body .text h2 {
+    font-weight: bold;
+    font-size: 25px;
+  }
+  .container .design-body .text p {
+    text-align: center;
+    align-items: center;
+    line-height: 1.5;
+    margin-left: 40px;
+    margin-right: 40px;
+    color: #868c9c;
+  }
+  .container .design-body .plan .left-side .text-side {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  .container .design-body .plan .left-side .text-side .annual-plane {
+    font-size: 12px;
+    margin-left: 10px;
+    line-height: 0.4;
+  }
+  .container .design-body .plan .left-side .text-side .change {
+    font-size: 12px;
+    text-decoration: none;
+    color: #4c6ef5;
+    text-decoration: underline;
+  }
+  .container .design-body .buttoms .buttom-one {
+    background: linear-gradient(135deg, #382ae1 0%, #382ae1 100%);
+    color: white;
+    border-radius: 10px;
+    height: 50px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: transform 0.2s ease;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 15px 10px rgba(115, 103, 247, 0.4);
+  }
+  .container .design-body .buttoms .buttom-one:hover {
+    background-color: var(--change-color);
+    transform: translateY(-2px);
+  }
+  .container .design-body .buttoms .buttom-two {
+    color: #666;
+    font-size: 12px;
+    background: transparent;
+    cursor: pointer;
+    padding: 16px;
+  }
+}
